@@ -37,3 +37,6 @@ So if you're feeling lost and frustrated, give this package a try. It might just
 * `imports.py` file is used by the notebooks present in the `Notebooks` folder.
 
 * `requirements.txt` file can be used in conjunction with pip to install the packages I used when I wrote the code
+
+### Note 
+I also recommend checking out my colleague's [implementation](https://github.com/lkulowski/LSTM_encoder_decoder) of rnn in pytorch.
