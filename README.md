@@ -21,22 +21,24 @@ So if you're feeling lost and frustrated, give this package a try. It might just
 6. It has a class which can take in any **univariate** and **equispaced** time series data and prepare dataset to train the defined ML model. Useful if you want to use it for your own time series data.
 7. IMPORTANT: I have included a notebook which uses [Optuna](https://optuna.org/) library to perform hyperparameter tuning.
 
+## Usage
+Best way to figure out how to use this package is to check out the example notebooks available in the `Notebooks` folder.
 
 ## Code Structure
-* `Model` folder contains the model definition classes. 
+* `Model`: model definition classes. 
 
-* `Notebooks` folder contains example notebooks which you can use to learn how to use the code package and perform hyperparameter tuning.
+* `Notebooks`: example notebooks for code usage and for performing hyperparameter tuning.
 
-* `Saved_models` folder is empty and is a placeholder for directory which is used to store ML models and loss curves as epoch loop runs.
+* `Saved_models`: empty; directory where output from the code is saved.
 
 * `Utils` folder has three class files:
     * Create_and_Train.py is THE main file which creates a model, runs the epoch loop, saves models and loss curves.
-    * Trainer.py contains the training loop definition, a _test_ function to run the model on test data, as well as functions to use the ML model to make predictions. 
+    * Trainer.py contains the training loop definition, a _test_ function to run the model on test data, as well as functions to make predictions. 
     * SeqData.py file is used to create sequenced dataset given a 1D time series.
 
 * `imports.py` file is used by the notebooks present in the `Notebooks` folder.
 
-* `requirements.txt` file can be used in conjunction with pip to install the packages I used when I wrote the code
+* `requirements.txt` file can be used in conjunction with pip to install the required packages.
 
 ### Note 
 I also recommend checking out my colleague's [implementation](https://github.com/lkulowski/LSTM_encoder_decoder) of rnn in pytorch.
