@@ -185,7 +185,7 @@ class Create_and_Train():
             
     #---------------Helper functions-----------------  
     def __define_model(self, params):
-        sys.path.append(os.path.dirname(os.getcwd())+'/Model')
+        sys.path.append(os.path.dirname(os.path.abspath('.'))+'/Model')
         
         if params['encdec']:
             from EncDec import Encoder, Decoder, EncDec
