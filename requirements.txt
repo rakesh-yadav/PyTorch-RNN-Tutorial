@@ -1,8 +1,8 @@
-numpy==1.23.3
+numpy>=1.23.3
 torch==1.12.1
-python==3.9.13
-matplotlib==3.5.3
-seaborn==0.11.2
+python>=3.8
+matplotlib
+seaborn
 tqdm
 optuna
 optuna-dashboard
