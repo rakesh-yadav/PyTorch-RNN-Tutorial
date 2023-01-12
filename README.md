@@ -14,7 +14,7 @@ So if you're feeling lost and frustrated, give this package a try. It might just
 
 ## Code Functionalities
 1. It can use PyTorch's vanilla versions of RNN, LSTM, and GRU to take in n points to predict 1 point.
-2. It can use the Encoder-Decoder architechture (i.e. seq to seq) to take in n points and predict m points. 
+2. It can use the Encoder-Decoder formulation (base units could be RNN, LSTM, or GRU) to take in n points and predict m points (Seq2Seq). 
 3. It has a class structure to keep the code clean and compartmentalized.
 4. It can save PyTorch models and load earlier models to train further.
 5. It can utilize a GPU if present.
