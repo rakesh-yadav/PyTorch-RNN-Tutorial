@@ -4,7 +4,7 @@
 import torch.nn as nn
 import torch
 
-class RNN_Vanilla(nn.Module):
+class RNNs(nn.Module):
 
     """Model class to declare an rnn and define a forward pass of the model."""
 
