@@ -1,4 +1,4 @@
-# PyTorch tutorial for using RNNs and Encoder-Decoder RNNs for time series forcasting and hyperparameter tuning
+# PyTorch tutorial on using RNNs and Encoder-Decoder RNNs for time series forcasting and hyperparameter tuning
 
 ## Some blabber
 
