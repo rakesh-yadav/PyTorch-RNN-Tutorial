@@ -234,9 +234,6 @@ class Create_and_Train():
 
     def __save_model(self, epoch, params):
         os.chdir(params['save_path'])
-        print_loss = self.test_loss if self.params['test'] else self.train_loss
-        # use '\r' ending to overwrite the printed message
-        print('Lowest loss ({:0.3e}) decreased. Saving model....'.format(print_loss), end='\r')
         filename =self.model_filename+f'_epochs{self.first_epoch}to{self.first_epoch+self.params["EPOCHS"]-1}'+'.pth'
         torch.save({'params': self.params,          # save model definition dict
                     'epoch': self.first_epoch+epoch,# save the epoch of the model
