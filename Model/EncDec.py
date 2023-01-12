@@ -138,7 +138,7 @@ class EncoderDecoder(nn.Module):
         """
 
         # inherit the nn.Module class via 'super'
-        super(EncDec, self).__init__()
+        super(EncoderDecoder, self).__init__()
         
         # store stuff in the class
         self.enc   = encoder
