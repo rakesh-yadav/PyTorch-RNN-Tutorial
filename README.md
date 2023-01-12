@@ -24,6 +24,10 @@ So if you're feeling lost and frustrated, give this package a try. It might just
 ## Usage
 Best way to figure out how to use this package is to check out the example notebooks available in the `Notebooks` folder.
 
+I have also made a sample notebook available in Google Colab!
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dsP3FhY-qghqfcmn6TLaUkuyCaWAl8WL?usp=sharing)
+
+
 ## Code Structure
 * `Model`: model definition classes. 
 
