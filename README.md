@@ -13,13 +13,12 @@ I had only a basic background in ML and zero knowledge of PyTorch (using Keras d
 So if you're feeling lost and frustrated, give this package a try. It might just help you understand not only RNNs, but PyTorch as well. And who knows, you might even have a little fun along the way.
 
 ## Code Functionalities
-1. It can use PyTorch's vanilla versions of RNN, LSTM, and GRU to take in n points to predict 1 point.
-2. It can use the Encoder-Decoder formulation (base units could be RNN, LSTM, or GRU) to take in n points and predict m points (Seq2Seq). 
-3. It has a class structure to keep the code clean and compartmentalized.
-4. It can save PyTorch models and load earlier models to train further.
-5. It can utilize a GPU if present.
-6. It has a class which can take in any **univariate** and **equispaced** time series data and prepare dataset to train the defined ML model. Useful if you want to use it for your own time series data.
-7. IMPORTANT: I have included a notebook which uses [Optuna](https://optuna.org/) library to perform hyperparameter tuning.
+1. Many-to-One prediction using PyTorch's vanilla versions of RNN, LSTM, and GRU.
+2. Many-to-Many (or Seq2Seq) prediction using Encoder-Decoder architecture; base units could be RNN, LSTM, or GRU.
+3. Hyperparameter Tuning! It uses the [Optuna](https://optuna.org/) library for that.
+4. Save PyTorch models, as well as reload and train them further.
+5. Works on any **univariate** and **equispaced** time series data.
+6. Can use GPUs.
 
 ## Usage
 Best way to figure out how to use this package is to check out the example notebooks available in the `Notebooks` folder.
