@@ -119,7 +119,7 @@ class Decoder(nn.Module):
         
         return out, hidden
 
-class EncDec(nn.Module):
+class EncoderDecoder(nn.Module):
 
     """Combines the encoder and decoder classes to define a global model"""
 
