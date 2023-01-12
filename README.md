@@ -42,5 +42,8 @@ I have also made a sample notebook available in Google Colab!
 
 * `requirements.txt` file can be used in conjunction with pip to install the required packages.
 
+## Limitations
+I haven't generalized the code to use multivariate time series data for the sake of simplicty. But, it is relatively easy to do. If interested, report in the repo's _Issues_ section and we can collaborate!
+
 ### Note 
 I also recommend checking out my colleague's [implementation](https://github.com/lkulowski/LSTM_encoder_decoder) of rnn in pytorch.
