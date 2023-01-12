@@ -26,7 +26,7 @@ class RNNs(nn.Module):
         """
 
         # inherit the nn.Module class via 'super'
-        super(RNN_Vanilla, self).__init__()
+        super(RNNs, self).__init__()
 
         # store stuff in the class
         self.num_layers = num_layers
