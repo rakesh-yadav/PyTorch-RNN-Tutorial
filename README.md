@@ -26,7 +26,8 @@ Best way to figure out how to use this package is to check out the example noteb
 
 I have also made a sample notebook available in Google Colab!
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dsP3FhY-qghqfcmn6TLaUkuyCaWAl8WL?usp=sharing)
-Note: There might be a torchvision(text)(audio) dependency arrors while pip install. Ignore them and continue.
+
+Note: There might be a torchvision(text)(audio) dependency errors while pip install. Ignore them and continue.
 
 ## Code Structure
 * `Model`: model definition classes. 
