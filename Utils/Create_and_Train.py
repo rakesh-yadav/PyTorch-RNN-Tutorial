@@ -185,10 +185,14 @@ class Create_and_Train():
             
     #---------------Helper functions-----------------  
     def __define_model(self, params):
-        sys.path.append('../Model')
+        # getting the name of the directory
+        # where this file is present.
+        current = os.path.dirname(os.path.realpath(__file__))
+        parent = os.path.dirname(current)
+        sys.path.append(parent+'/Model')
         
         if params['encdec']:
-            from Model.EncDec import Encoder, Decoder, EncoderDecoder
+            from EncDec import Encoder, Decoder, EncoderDecoder
             enc = Encoder(params['input_size'], params['hidden_size'], params['num_layers'], params['flavor'])
             dec = Decoder(params['input_size'], params['hidden_size'], params['num_layers'], params['flavor'])
             model = EncDec(enc, dec, params["right_seq_size"])
@@ -198,7 +202,7 @@ class Create_and_Train():
             print(f'I will take in {params["left_seq_size"]} points and predict {params["right_seq_size"]} points.')
             print('**************************************************************************')
         else:
-            from Model.RNN_Vanilla import RNNs
+            from RNN_Vanilla import RNNs
             model = RNNs(params['input_size'], params['hidden_size'], params['num_layers'], params['flavor'])
             print('**************************************************************************')
             print(f'RNN {params["flavor"]} Regression model initialized with '\
