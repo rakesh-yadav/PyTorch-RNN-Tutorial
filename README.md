@@ -27,16 +27,16 @@ I have also made a sample notebook available in Google Colab!
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dsP3FhY-qghqfcmn6TLaUkuyCaWAl8WL?usp=sharing)
 
 ## Code Structure
-* `Model`: model definition classes. 
+* `Model`: Directory  -  contains classes which define the RNN models. _RNN_Vanilla.py_ defines the Many-to-One RNN; the traditional kind. _The EncDec.py_ file defines the Encode-Decoder class which uses the traditional RNN units as Encoder and Decoder modules, which are then combined together to provide a one-shot Many-to-Many prediction.
 
-* `Notebooks`: example notebooks for code usage and for performing hyperparameter tuning.
+* `Notebooks`: Directory - example notebooks which demonstrate how to use the code on a sample time series data consisting of multi frequency sin waves. It also contains a notebook which demonstrates how to perform hyperparameter tuning using Optuna.
 
 * `Saved_models`: empty; directory where output from the code is saved.
 
-* `Utils` folder has three class files:
-    * Create_and_Train.py is THE main file which creates a model, runs the epoch loop, saves models and loss curves.
-    * Trainer.py contains the training loop definition, a _test_ function to run the model on test data, as well as functions to make predictions. 
-    * SeqData.py file is used to create sequenced dataset given a 1D time series.
+* `Utils` Directory - contains all the class files which do the data prep, training, testing, validation, and predicting. 
+   * _Trainer.py_ contains the training loop, a test function to run the model on test data, as well as functions to make predictions. 
+   * _SeqData.py_ file is used to create sequenced dataset, in torch tensors format, given a numpy 1D time series. 
+   * _Create_and_Train.py_ is THE main file which creates a model (using the classes in the Model directory), runs the epoch loop, saves PyTorch models and train-test loss curves.
 
 * `imports.py` file is used by the notebooks present in the `Notebooks` folder.
 
