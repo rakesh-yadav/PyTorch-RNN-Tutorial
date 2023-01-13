@@ -27,6 +27,8 @@ I have also made a sample notebook available in Google Colab!
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dsP3FhY-qghqfcmn6TLaUkuyCaWAl8WL?usp=sharing)
 
 ## Code Structure
+I have structured the code so that different operations are abstracted away in Python Classes. Here is a brief summary:
+
 * `Model`: Directory  -  contains classes which define the RNN models. _RNN_Vanilla.py_ defines the Many-to-One RNN; the traditional kind. _The EncDec.py_ file defines the Encode-Decoder class which uses the traditional RNN units as Encoder and Decoder modules, which are then combined together to provide a one-shot Many-to-Many prediction.
 
 * `Notebooks`: Directory - example notebooks which demonstrate how to use the code on a sample time series data consisting of multi frequency sin waves. It also contains a notebook which demonstrates how to perform hyperparameter tuning using Optuna.
