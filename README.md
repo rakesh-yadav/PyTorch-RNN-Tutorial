@@ -2,8 +2,6 @@
 
 ## Some blabber
 
-Hi there! I am glad you decided to stop by this corner of the internet :grinning:
-
 This package resulted from my effort to write a simple PyTorch based ML package that uses recurrent neural networks (RNN) to predict a given time series data. 
 
 You must be wondering why you should bother with this package since there is a lot of stuff on the internet on this topic. Well, let me tell you that I have traveled the internet lanes and I was really frustrated by how scattered the information is in this context. It was a lot of effort to collect all the relevant parts from the internet and construct this package. 
