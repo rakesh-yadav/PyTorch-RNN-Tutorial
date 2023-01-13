@@ -31,7 +31,7 @@ I have also made a sample notebook available in Google Colab!
 
 * `Notebooks`: Directory - example notebooks which demonstrate how to use the code on a sample time series data consisting of multi frequency sin waves. It also contains a notebook which demonstrates how to perform hyperparameter tuning using Optuna.
 
-* `Saved_models`: empty; directory where output from the code is saved.
+* `Saved_models`: Directory, empty - used to store the output from the _Create_and_Train.py_ file.
 
 * `Utils` Directory - contains all the class files which do the data prep, training, testing, validation, and predicting. 
    * _Trainer.py_ contains the training loop, a test function to run the model on test data, as well as functions to make predictions. 
